@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: arial, sans-serif ;
+    text-transform: capitalize;
+    font-size: 150%;
+    background: rgb(37, 37, 37);
+    color: #fff;
+    display: block;
+}
+
+#game-container{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(7, 128, 199);
+}
+#speedDisplay {
+    text-align: end;
+    color: yellow;
+    margin-right: 5%;
+}
+
+#scoreDisplay { 
+    text-align: end;
+    color: turquoise;
+    margin-right: 5%;
+}
+
+#target { 
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 34);
+    border-radius: 50%;
+    transition: top 0.5s, left 0.5s;
+}
+
+#target:hover{ 
+    background: rgb(0,255 ,166)
+}
+
+button {
+    border: 0;
+    background-image: linear-gradient(150deg,#9500ff, #09f, #0df);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 3s;
+    justify-content: center;
+    
+}
+
+button span{
+    background-color: #111;
+    padding: 16px, 24px;
+    border-radius: 6px;
+    transition: 3s;
+}
+
+button:hover span{
+    background: none;
+}
+
+button:active{
+    transform: scale(0,9);
+}
+
+
+
